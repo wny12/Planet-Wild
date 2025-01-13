@@ -1,0 +1,715 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planet Wild</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+
+        /* Custom CSS */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #060606;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        header.navbar {
+            background-color: rgb(55, 139, 212) !important;
+            color: rgb(28, 87, 215);
+        }
+
+        .navbar a.nav-link {
+            color: rgb(255, 255, 255) !important;
+        }
+
+        .navbar a.nav-link:hover {
+            color: #f4f4f4 !important;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        /* Search Bar Style */
+        header .navbar .form-control {
+            max-width: 300px;
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        header .navbar .btn-outline-success {
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #0e0d0d;
+            padding: 10px 15px;
+        }
+
+        header .navbar .btn-outline-success:hover {
+            background-color: #ffffff;
+        }
+
+        /* Donation Section */
+        .donation-section {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+
+        .donation-section input[type="number"] {
+            max-width: 200px;
+        }
+
+        <title>Full Width Subscription and Footer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Reset some default styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Full width Subscription Section */
+    .support-wildlife {
+      background-color: #f0f8ff;
+      padding: 40px 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .support-wildlife h4 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .support-wildlife p {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .subscription-form {
+      display: inline-flex;
+      margin-top: 20px;
+    }
+
+    .subscription-form input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 250px;
+    }
+
+    .subscription-form button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .subscription-form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Full width Footer Section */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      width: 100%;
+      position: relative;
+    }
+
+    .social-media-icons a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .social-media-icons a:hover {
+      color: #007bff;
+    }
+
+    /* Centered Content */
+    .container {
+      width: 100%;
+      text-align: center;
+    }
+
+        /* Custom Styles for Sections */
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .content-card {
+            margin-bottom: 30px;
+        }
+
+        .content-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .content-card h3 {
+            font-size: 1.5rem;
+            color: #0056b3;
+        }
+
+        .content-card p {
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .content-card {
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .content-card img {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            border-radius: 10px;
+        }
+
+        .content-card:hover img {
+            transform: rotateY(180deg);
+        }
+
+        .content-card-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            background-color: #f8f9fa;
+            padding: 20px;
+            transform: rotateY(180deg);
+        }
+
+        .content-card:hover .content-card-back {
+            transform: rotateY(0);
+        }
+
+        .content-card-front,
+        .content-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        /* Support Wildlife Conservation Section */
+        .support-wildlife {
+            background-color: white;
+            color: black;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .support-wildlife h2,
+        .support-wildlife p {
+            color: black;
+        }
+
+        .load-more-btn {
+            display: block;
+            margin: 20px auto;
+            background-color: #c4bf5d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .load-more-btn:hover {
+            background-color: #5c4d19;
+        }
+
+        .extra-species {
+            display: none;
+        }
+
+        /* Ensure layout consistency */
+        .species-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+        }
+
+        .col-md-4 {
+            flex: 1 1 calc(33.33% - 20px);
+            box-sizing: border-box;
+        }
+
+        <title>Centered PayPal Button</title>
+    <style>
+    /* Centering the PayPal button container */
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+    #paypal-container-ADDADRGBQ6N5C {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    </style>
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "SVC5PmpTLZNdRqES3",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="PLANET_WILD_2-removebg-preview.png" alt="Planet Wild Logo" class="me-2" style="height: 70px;">
+                <span class="fw-bold">Planet Wild</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#species">Species</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conservation">Conservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+                </ul>
+
+                <!-- Search Bar -->
+                <form class="d-flex ms-3" onsubmit="event.preventDefault(); search();">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+<!-- Modal -->
+ <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="notificationModalLabel">Welcome to Planet Wild!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Discover our latest updates on endangered species and conservation efforts. Help us protect the planet's wildlife!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="conservation.html" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Learn More</a>
+            </div>
+       </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Auto-open the modal when the page loads
+    window.onload = function() {
+        var myModal = new bootstrap.Modal(document.getElementById('notificationModal'));
+        myModal.show();
+    };
+</script>
+</body>
+</html>
+
+
+<!-- Home Section -->
+
+    <div class="container">
+        <h2 class="text-center mb-4">Welcome to Planet Wild!</h2>
+        <p class="lead text-center">At Planet Wild, we are dedicated to protecting wildlife and preserving the beauty of our planet. Join us on a journey to explore the wonders of the natural world and support conservation efforts for endangered species.</p>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3>Explore Species</h3>
+                <p>Discover the fascinating variety of species that inhabit our planet. Each species is vital to the balance of our ecosystems.</p>
+                <a href="#species" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Get Involved</h3>
+                <p>Support wildlife conservation through donations, volunteering, or by simply spreading awareness. Every action counts!</p>
+                <a href="#conservation" class="btn btn-primary">Join Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Species Section -->
+    <section id="species" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Explore Species</h2>
+            <p class="text-center">Our planet is home to millions of species, each playing a unique role in maintaining the balance of nature. Explore some of the most fascinating species here!</p>
+
+            <div class="species-row">
+                <!-- Initially Visible Species -->
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <img src="elephant.avif" alt="Elephant">
+                        <h3>African Elephant</h3>
+                        <h5><a href="elephant.html">Explore More</a></h5>
+                        <p>The African elephant is the largest land mammal on Earth, known for its intelligence and strong social bonds. Unfortunately, they face the threat of poaching for their ivory tusks.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <img src="bengal tiger.jpg" alt="Tiger">
+                        <h3>Bengal Tiger</h3>
+                        <h5><a href="bengal.html">Explore More</a></h5>
+                        <p>The Bengal tiger is one of the most endangered species in the world, with only a few thousand individuals left in the wild. Habitat loss and poaching are major threats to their survival.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <img src="polar bear.avif" alt="Polar Bear">
+                        <h3>Polar Bear</h3>
+                        <h5><a href="polar bear.html">Explore More</a></h5>
+                        <p>Polar bears are iconic creatures of the Arctic, but they are rapidly losing their habitat due to climate change and the melting of sea ice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra Species (Initially Hidden) -->
+            <div class="extra-species">
+                <div class="species-row">
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="amur leopard.jpg" alt="leopard">
+                            <h3>Amur Leopard</h3>
+                            <h5><a href="amur leopard.html">Explore More</a></h5>
+                            <p>Native to the Russian Far East and northeast China, this big cat is critically endangered due to habitat loss and poaching.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="giant panda.jpeg" alt="Panda">
+                            <h3>Giant Panda</h3>
+                            <h5><a href="giant panda.html">Explore More</a></h5>
+                            <p>Giant pandas are native to China and are famous for their distinct black and white fur. They are an endangered species primarily due to habitat destruction.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="kangaroo.jpg" alt="Kangaroo">
+                            <h3>Kangaroo</h3>
+                            <h5><a href="kangaroo.html">Explore More</a></h5>
+                            <p>Kangaroos are iconic marsupials native to Australia. They are facing habitat destruction, with their populations affected by human encroachment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="vaquita.webp" alt="Vaquita">
+                            <h3>Vaquita</h3>
+                            <h5><a href="vaquita.html">Explore More</a></h5>
+                            <p>The The vaquita is a critically endangered porpoise in Mexico's Gulf of California, with fewer than 20 left due to fishing net entanglement.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="javan rhino.jpeg" alt="Javan Rhino">
+                            <h3>Javan Rhino</h3>
+                            <h5><a href="javan rhino.html">Explore More</a></h5>
+                            <p>The Javan rhino is a critically endangered species found only in Ujung Kulon National Park, Indonesia. Fewer than 80 remain due to habitat loss and poaching.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="orangutan.avif" alt="Orang Utan">
+                            <h3>Sumatra Orang Utan</h3>
+                            <h5><a href="orang utan.html">Explore More</a></h5>
+                            <p>The Sumatran orangutan is a critically endangered great ape found only on Sumatra, Indonesia. Habitat loss and poaching threaten its survival.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="mountain gorilla.avif" alt="Mountain Gorilla">
+                            <h3>Mountain Gorilla</h3>
+                            <h5><a href="mountain gorilla.html">Explore More</a></h5>
+                            <p>The mountain gorilla is a critically endangered primate found in the forests of central Africa. Conservation efforts have increased their numbers, but habitat loss and poaching remain threats.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="saola.jpg" alt="Saola">
+                            <h3>Saola</h3>
+                            <h5><a href="saola.html">Explore More</a></h5>
+                            <p>The saola, or "Asian unicorn," is a critically endangered and elusive mammal found in the Annamite Mountains of Laos and Vietnam. Habitat loss and poaching threaten its survival.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-card">
+                            <img src="kakapo.webp" alt="Kakapo">
+                            <h3>Kakapo</h3>
+                            <h5><a href="kakapo.html">Explore More</a></h5>
+                            <p>The kakapo is a critically endangered, flightless parrot native to New Zealand. It is nocturnal and threatened by habitat loss and introduced predators. Conservation efforts have boosted its population.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <button class="load-more-btn" onclick="loadMoreSpecies()">Load More</button>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function loadMoreSpecies() {
+            const extraSpecies = document.querySelector('.extra-species');
+            extraSpecies.style.display = 'block';  // Show hidden species
+            const loadMoreBtn = document.querySelector('.load-more-btn');
+            loadMoreBtn.style.display = 'none';  // Hide "Load More" button after click
+        }
+    </script>
+
+  <!-- Conservation Section -->
+  <section id="conservation" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center">Conservation Efforts</h2>
+        <p class="text-center">Join us in the fight to protect endangered species and preserve their habitats. Our efforts focus on habitat restoration and raising awareness about the importance of biodiversity. Here are some of our key initiatives:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-card">
+                    <h3>Habitat Restoration</h3>
+                    <img src="habitat restoration.avif" alt="Habitat Restoration" class="img-fluid">
+                    <h5><a href="habitat restoration.html">Explore More</a></h5>
+                    <p>We work on restoring the natural habitats of endangered species, providing them with the safe environment they need to thrive.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-card">
+                    <h3>Wildlife Education Programs</h3>
+                    <img src="education.webp" alt="Habitat Restoration" class="img-fluid">
+                    <h5><a href="wildlife education.html">Explore More</a></h5>
+                    <p>Our Wildlife Education Programs aim to raise awareness about the importance of conservation and the challenges faced by endangered species. By empowering individuals with knowledge, we can inspire action to protect our planet's precious wildlife.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Function to search the page content
+    function search() {
+        const query = document.querySelector('.navbar .form-control').value.toLowerCase(); // Get search query
+        const content = document.querySelectorAll('.content-card'); // Find all content sections (like species cards)
+        
+        content.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const description = card.querySelector('p').textContent.toLowerCase();
+            
+            if (title.includes(query) || description.includes(query)) {
+                card.style.display = 'block'; // Show the card if it matches
+            } else {
+                card.style.display = 'none'; // Hide the card if it doesn't match
+            }
+        });
+    }
+
+    // Optional: Trigger the search dynamically as the user types
+    document.querySelector('.navbar .form-control').addEventListener('input', search);
+</script>
+
+</body>
+</html>
+
+    <!-- Donation Section -->
+<!-- Donation Section with PayPal -->
+<section id="donate" class="donation-section py-5">
+    <div class="container text-center">
+        <h2 class="section-title">Support Wildlife Conservation</h2>
+        <p>Your donation will help us protect endangered species and restore their habitats. Every contribution makes a difference! You can donate directly to our ongoing conservation projects or become a monthly supporter.</p>
+
+        <div id="paypal-container-ADDADRGBQ6N5C" style="text-align: center;">
+            <!-- PayPal button will be rendered here -->
+        </div>
+
+        <script src="https://www.paypal.com/sdk/js?client-id=BAA_a1lWdFRd82oBj8bZOc7vrOm7ZFwcer_D12Vncyj_7rBIFxjockr7zCxPK2-rBYQaFnvOHjf57W6yA8&components=hosted-buttons&disable-funding=venmo&currency=MYR"></script>
+        <script>
+            paypal.HostedButtons({
+                hostedButtonId: "ADDADRGBQ6N5C",
+            }).render("#paypal-container-ADDADRGBQ6N5C");
+        </script>
+    </div>
+</section>
+
+
+
+<!-- Subscription Section -->
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .support-wildlife {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        max-width: 600px;
+        margin: 50px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h4 {
+        margin-top: 0;
+        color: #000;
+    }
+
+    p {
+        margin: 10px 0 20px;
+        color: #555;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #000;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #333;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #333;
+    }
+</style>
+
+<div class="support-wildlife">
+    <h4>Subscribe to Our Newsletter</h4>
+    <p>Stay updated with our latest news and initiatives!</p>
+
+<br>
+<br>
+<br>
+<br>
+
+    <section id="contact" class="container">
+        <h4>Contact Me</h4>
+        <form onsubmit="event.preventDefault(); sendMail();">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</div>
+
+       
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container text-center">
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/profile.php?id=100089424264212&mibextid=ZbWKwL target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://youtube.com/@planet-wild?si=WpAmKu2ZiKbPFhfe" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                <a href="https://www.instagram.com/planetwild.official?igsh=emxwczM2OWtpeHJw" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://js.stripe.com/v3/"></script>
+    </body>
+    </html>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+                                           

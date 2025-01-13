@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Elephant - Planet Wild</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0; /* Remove any default margin */
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        /* Set navbar to be sticky at the top with yellow background */
+        header nav {
+            background-color:  rgb(55, 139, 212) !important; /* Change the background to yellow */
+            position: fixed;  /* Fix navbar at the top */
+            top: 0;  /* Top of the page */
+            left: 0;
+            width: 100%;  /* Ensure it spans the entire width */
+            z-index: 1000;  /* Ensure navbar is on top of other content */
+        }
+
+        /* Style the navbar links */
+        .navbar-brand, .nav-link {
+            color: black !important;  /* Ensure the text is visible */
+        }
+
+        /* Change text color on hover */
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: orange !important;  /* Change text color on hover */
+        }
+
+        /* Adjust logo size */
+        .navbar img {
+            height: 60px;  /* Adjust height of the logo */
+        }
+
+        /* Adjust content's margin to prevent hiding under navbar */
+        main {
+            margin-top: 80px; /* Add space to prevent content from being hidden */
+        }
+
+        /* Style for images and videos */
+        .media-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .media-container img, .media-container video {
+            width: 80%; /* Ensure images/videos fit within the container */
+            max-width: 800px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-center w-100">
+                <a class="navbar-brand" href="index.html">Planet Wild</a>
+                <img src="PLANET_WILD_2-removebg-preview.png" alt="Planet Wild Logo" class="me-2" style="height: 80px;">
+                <div class="d-flex justify-content-center w-100">
+                    <a class="nav-link text-white mx-3" href="index.html">Home</a>
+                    <a class="nav-link text-white mx-3" href="index.html#species">Back to Species</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>African Elephant</h1>
+        <p>The African elephant is the largest land mammal on Earth. Known for their intelligence and strong social bonds, they are a keystone species in many African ecosystems. Elephants play a crucial role in maintaining the structure of their habitat by shaping the landscape, spreading seeds, and creating water holes for other animals.</p>
+
+        <div class="media-container">
+            <!-- Image of African Elephant -->
+            <img src="elephant.avif" alt="African Elephant in the Wild">
+        </div>
+
+        <h2>Physical Characteristics</h2>
+        <p>African elephants have large ears that help regulate their body temperature. They are also distinguished by their large tusks, which are actually elongated incisor teeth. These tusks grow throughout their lifetime and are often used for digging, lifting objects, and stripping bark from trees.</p>
+
+        <div class="media-container">
+            <!-- Video on Elephant physical characteristics -->
+	<div style="text-align: center;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/XXehIYPXTjs?si=q7uUcKbLn5tMuiUB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+        </div>
+
+        <h2>Habitat and Diet</h2>
+        <p>African elephants are typically found in savannas, forests, and grasslands across sub-Saharan Africa. They are herbivores, feeding on a variety of grasses, fruits, and tree bark. They require large amounts of food, often consuming up to 300 pounds of vegetation each day.</p>
+
+        <div class="media-container">
+            <!-- Image of African Elephants in their Habitat -->
+            <img src="elephant_in_savanna.jpg" alt="African Elephants in the Savanna">
+        </div>
+
+        <h2>Conservation Status</h2>
+        <p>Unfortunately, African elephants are currently listed as vulnerable by the International Union for Conservation of Nature (IUCN). They face numerous threats, including poaching for their tusks, habitat loss, and human-wildlife conflict. Conservation efforts are underway to protect these majestic creatures through anti-poaching measures, habitat restoration, and community involvement.</p>
+
+        <div class="media-container">
+            <!-- Video about elephant conservation efforts -->
+	<div style="text-align: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fk3VdpuFx0Q?si=bRPlQux6NCFqBH4O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+
+        <h2>How You Can Help</h2>
+        <p>Supporting wildlife conservation organizations, reducing demand for ivory products, and advocating for stronger protections for elephants are all ways that you can help ensure the survival of African elephants for future generations.</p>
+
+        <p>Learn more about African elephants and other species at <a href="index.html#species">Planet Wild Species Page</a>.</p>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Planet Wild. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

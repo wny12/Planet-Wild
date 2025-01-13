@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Gorilla - Planet Wild</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0; /* Remove any default margin */
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        /* Set navbar to be sticky at the top with yellow background */
+        header nav {
+            background-color: rgb(55, 139, 212) !important; /* Change the background to yellow */
+            position: fixed;  /* Fix navbar at the top */
+            top: 0;  /* Top of the page */
+            left: 0;
+            width: 100%;  /* Ensure it spans the entire width */
+            z-index: 1000;  /* Ensure navbar is on top of other content */
+        }
+
+        /* Style the navbar links */
+        .navbar-brand, .nav-link {
+            color: black !important;  /* Ensure the text is visible */
+        }
+
+        /* Change text color on hover */
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: orange !important;  /* Change text color on hover */
+        }
+
+        /* Adjust logo size */
+        .navbar img {
+            height: 60px;  /* Adjust height of the logo */
+        }
+
+        /* Adjust content's margin to prevent hiding under navbar */
+        main {
+            margin-top: 80px; /* Add space to prevent content from being hidden */
+        }
+
+        /* Style for images and videos */
+        .media-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .media-container img, .media-container video {
+            width: 80%; /* Ensure images/videos fit within the container */
+            max-width: 800px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-center w-100">
+                <a class="navbar-brand" href="index.html">Planet Wild</a>
+                <img src="PLANET_WILD_2-removebg-preview.png" alt="Planet Wild Logo" class="me-2" style="height: 80px;">
+               <div class="d-flex justify-content-center w-100">
+                    <a class="nav-link text-white mx-3" href="index.html">Home</a>
+                    <a class="nav-link text-white mx-3" href="index.html#species">Back to Species</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Mountain Gorilla</h1>
+        <p>The mountain gorilla (Gorilla beringei beringei) is a subspecies of the eastern gorilla. These majestic creatures are found in the dense forests of the Virunga Mountains, spanning across Rwanda, Uganda, and the Democratic Republic of the Congo.</p>
+
+        <div class="media-container">
+            <!-- Image of Mountain Gorilla -->
+            <img src="mountain gorilla.avif" alt="Mountain Gorilla in its natural habitat">
+        </div>
+
+        <h2>Physical Characteristics</h2>
+        <p>Mountain gorillas are large, powerful primates, with adult males known as silverbacks due to the distinctive silver-colored hair on their backs. They have longer hair than other gorilla species, an adaptation to the colder temperatures of their mountainous habitat. Adult males can weigh up to 440 pounds (200 kilograms) and stand 5.5 feet (1.7 meters) tall when upright.</p>
+
+        <div class="media-container">
+            <!-- Video on Mountain Gorilla Physical Characteristics -->
+	<div style="text-align: center;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/d0cwqDFo8zs?si=hfwXc_nGdMW98hNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+        </div>
+
+        <h2>Habitat and Diet</h2>
+        <p>Mountain gorillas inhabit dense forests and bamboo zones at elevations of 8,000 to 13,000 feet (2,400 to 4,000 meters). They are herbivorous, with a diet consisting mainly of leaves, shoots, and stems, but they also consume fruit when available.</p>
+
+        <div class="media-container">
+            <!-- Image of Mountain Gorilla Habitat -->
+            <img src="habitat_gorilla.jpg" alt="Mountain Gorilla Habitat in the Virunga Mountains">
+        </div>
+
+        <h2>Conservation Status</h2>
+        <p>Mountain gorillas are listed as endangered, with a population of around 1,000 individuals. They face threats from habitat destruction, poaching, human-wildlife conflict, and diseases like those spread by humans. Conservation efforts include protected reserves, anti-poaching patrols, and ecotourism initiatives that provide funding for conservation and community development.</p>
+
+        <div class="media-container">
+            <!-- Video on Mountain Gorilla Conservation Efforts -->
+	<div style="text-align: center;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/9XL9KSohjLQ?si=eFIYzuoXfnteMiIu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+        </div>
+
+        <h2>How You Can Help</h2>
+        <p>Support conservation organizations, promote sustainable tourism, and spread awareness about the importance of preserving mountain gorilla habitats. Avoid contributing to deforestation and habitat degradation through conscious consumer choices.</p>
+
+        <p>Learn more about mountain gorillas and other species at <a href="index.html#species">Planet Wild Species Page</a>.</p>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Planet Wild. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

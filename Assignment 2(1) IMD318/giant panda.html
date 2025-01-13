@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giant Panda - Planet Wild</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0; /* Remove any default margin */
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        /* Set navbar to be sticky at the top with yellow background */
+        header nav {
+            background-color: rgb(55, 139, 212) !important; /* Change the background to yellow */
+            position: fixed;  /* Fix navbar at the top */
+            top: 0;  /* Top of the page */
+            left: 0;
+            width: 100%;  /* Ensure it spans the entire width */
+            z-index: 1000;  /* Ensure navbar is on top of other content */
+        }
+
+        /* Style the navbar links */
+        .navbar-brand, .nav-link {
+            color: black !important;  /* Ensure the text is visible */
+        }
+
+        /* Change text color on hover */
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: orange !important;  /* Change text color on hover */
+        }
+
+        /* Adjust logo size */
+        .navbar img {
+            height: 60px;  /* Adjust height of the logo */
+        }
+
+        /* Adjust content's margin to prevent hiding under navbar */
+        main {
+            margin-top: 80px; /* Add space to prevent content from being hidden */
+        }
+
+        /* Style for images and videos */
+        .media-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .media-container img, .media-container video {
+            width: 80%; /* Ensure images/videos fit within the container */
+            max-width: 800px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-center w-100">
+                <a class="navbar-brand" href="index.html">Planet Wild</a>
+                <img src="PLANET_WILD_2-removebg-preview.png" alt="Planet Wild Logo" class="me-2" style="height: 80px;">
+                <div class="d-flex justify-content-center w-100">
+                    <a class="nav-link text-white mx-3" href="index.html">Home</a>
+                    <a class="nav-link text-white mx-3" href="index.html#species">Back to Species</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Giant Panda</h1>
+        <p>The giant panda is one of the most beloved and iconic animals in the world, known for its distinctive black and white coat. Native to China, these peaceful bears primarily inhabit the mountain ranges in central China, where they are famous for their love of bamboo. Despite their cute appearance, giant pandas face significant challenges to their survival due to habitat loss and low reproductive rates.</p>
+
+        <div class="media-container">
+            <!-- Image of Giant Panda -->
+            <img src="giant panda.jpeg" alt="Giant Panda in the Wild">
+        </div>
+
+        <h2>Physical Characteristics</h2>
+        <p>Giant pandas have a striking appearance with their white fur and black markings around their eyes, ears, and limbs. They have a round face, large ears, and a stout, robust body. Although they are classified as carnivores, pandas have adapted to a bamboo diet, with specialized wrist bones that function like an opposable thumb to help them grasp bamboo stalks.</p>
+
+        <div class="media-container">
+            <!-- Video on Giant Panda physical characteristics -->
+	<div style="text-align: center;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/fy33YRfNlOE?si=hOEPdoFx7oDiNWUl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+        </div>
+
+        <h2>Habitat and Diet</h2>
+        <p>Giant pandas are found in the mountain forests of central China, primarily in Sichuan, Shaanxi, and Gansu provinces. They live in temperate forests with dense bamboo understory, which provides them with both food and shelter. Their diet consists almost entirely of bamboo, though they may occasionally eat other plants or small animals. An adult panda can consume up to 40 kilograms (88 pounds) of bamboo daily.</p>
+
+        <div class="media-container">
+            <!-- Image of Giant Panda in its Habitat -->
+            <img src="habitat_giantpanda.webp" alt="Giant Panda in Bamboo Forest">
+        </div>
+
+        <h2>Conservation Status</h2>
+        <p>The giant panda was once classified as "endangered" but has since been downgraded to "vulnerable" by the International Union for Conservation of Nature (IUCN) thanks to significant conservation efforts. These efforts have included habitat preservation, anti-poaching laws, and successful captive breeding programs. Despite this progress, giant pandas still face threats from habitat fragmentation and climate change that can impact bamboo availability.</p>
+
+        <div class="media-container">
+            <!-- Video about Giant Panda conservation efforts -->
+	<div style="text-align: center;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/WsxncjA_VVU?si=AGtY4vVqRSZAlNdq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+        </div>
+
+        <h2>How You Can Help</h2>
+        <p>You can help giant pandas by supporting conservation organizations that focus on preserving their habitat, funding panda breeding programs, and advocating for policies that protect endangered species. Additionally, reducing deforestation and climate change mitigation are crucial to safeguarding their bamboo forests.</p>
+
+        <p>Learn more about giant pandas and other species at <a href="index.html#species">Planet Wild Species Page</a>.</p>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Planet Wild. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
